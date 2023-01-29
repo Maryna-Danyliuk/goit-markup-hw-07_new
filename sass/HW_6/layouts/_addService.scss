@@ -1,0 +1,46 @@
+.add-service.section {
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-image: linear-gradient(to bottom,  #2E2F42B2
+  , #2E2F42B2), url(../images/Img.jpg);
+  position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.add-service__title {
+  display: block;
+  margin: 0 auto;
+  box-sizing: inherit;
+  width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $background-color;
+  margin-bottom: 30px;
+}
+.add-service__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: $background-color;
+  background-color: $logo-first-part-color-blue;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+  transition: background-color $animation, box-shadow $animation;
+  &:hover,
+  &:focus {
+    background-color: $hover-add-service-btn-background;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

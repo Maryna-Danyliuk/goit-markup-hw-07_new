@@ -1,0 +1,263 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+  transition: opacity $animation visibility $animation;
+  z-index: 1000;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+/* ============ */
+.backdrop {
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.backdrop {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.modal {
+  display: grid;
+  padding: 40px;
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $background-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: $animation;
+}
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: $background-color;
+}
+.btn-svg {
+  width: 18px;
+  height: 18px;
+}
+.no-scroll {
+  overflow: hidden;
+}
+.tittle {
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.icon-modal {
+  z-index: 10;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transition: fill $animation;
+
+  .container-modal:focus &,
+  .container-modal:focus-within &,
+  .container-modal:hover & {
+    fill: $logo-first-part-color-blue;
+  }
+}
+
+.user {
+  position: relative;
+font-family: Roboto;
+font-size: 12px;
+font-weight: 400;
+line-height: 1.33;
+letter-spacing: 0.04em;
+text-align: left;
+
+  color: $navigate-contacts-color;
+  display: flex;
+  flex-direction: column;
+}
+.container-modal {
+  position: relative;
+
+  margin-bottom: 10px;
+  text-align: left;
+  transition: color $animation, border $animation, fill $animation;
+}
+
+.text-before-input {
+  margin-bottom: 4px;
+}
+
+.input {
+  position: relative;
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  transition: border $animation;
+  padding-left: 42px;
+
+  .container-modal:focus &,
+  .container-modal:hover & {
+    border: 1px solid $logo-first-part-color-blue;
+  }
+
+  .container-modal:focus-within & {
+    border: 1px solid $logo-first-part-color-blue;
+  }
+}
+
+.input-comment {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 120px;
+  margin-top: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 4px;
+  transition: border-color $animation;
+  padding: 12px 16px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    border-color: $logo-first-part-color-blue;
+  }
+}
+
+.enter-text {
+  .container-modal:focus &,
+  .container-modal:hover & {
+    color: transparent;
+  }
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: $navigate-contacts-color;
+}
+
+.container-contract {
+  margin-bottom: 30px;
+  transition: color $animation;
+
+  &:hover,
+  &:focus {
+    color: $logo-first-part-color-blue;
+  }
+}
+
+.link-contract {
+  color: $logo-first-part-color-blue;
+}
+.btn-enter {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $background-color;
+  background-color: $logo-first-part-color-blue;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  border-radius: 4px;
+  border-color: transparent;
+}
+.check-btn {
+  position: absolute;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  transition: border $animation, background-color $animation;
+}
+.container-contract_vector {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  border: 2px solid;
+  border-color: $logo-second-part-color-black;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all $animation;
+  fill: $background-color;
+}
+.check-btn:checked + .container-contract_vector {
+  border: 2px solid $logo-first-part-color-blue;
+  background-color: $logo-first-part-color-blue;
+}
+
+.contract-permit {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contract-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.container-modal-comment {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.area-comment {
+  position: absolute;
+  top: 12px;
+  bottom: 12px;
+  left: 16px;
+  right: 16px;
+  border: none;
+}
+.contract-text {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  color: $navigate-contacts-color;
+}

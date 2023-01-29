@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container centur">
+        <nav class="nav">
+          <a href="./index.html" class="nav__logo link">
+            <span class="nav__logo-first">Web</span><span class="nav__logo-second">Studio</span>
+          </a>
+          <ul class="navigate list lists">
+            <li>
+              <a class="navigate__link" href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a class="navigate__link current" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="navigate__link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts list">
+          <li class="contacts__first">
+            <a class="contacts__item link" href="mailto:info@devstudio.com"
+              ><svg class="icon contacts__email">
+                <use href="./images/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <l>
+            <a aria-label="emaill" class="contacts__item link" href="tel:+110001111111"
+              ><svg class="icon contacts__tel">
+                <use href="./images/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +11 (000) 111-11-11</a
+            >
+          </l>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <h1 class="main-title visually-hidden">Портфолио</h1>
+      <section class="section portfolio">
+        <div class="container portfolio__container">
+          <ul class="portfolio__btn list">
+            <li class="portfolio__list">
+              <button type="button" class="button-filter">All</button>
+            </li>
+            <li class="portfolio__list">
+              <button type="button" class="button-filter">Web site</button>
+            </li>
+            <li class="portfolio__list">
+              <button type="button" class="button-filter">App</button>
+            </li>
+            <li class="portfolio__list">
+              <button type="button" class="button-filter">Design</button>
+            </li>
+            <li class="portfolio__list last">
+              <button type="button" class="button-filter last">Marketing</button>
+            </li>
+          </ul>
+          <ul class="portfolio__elements list">
+            <li class="portfolio__item">
+              <a class="portfolio__link link" href="*/"
+                ><img
+                  class="portfolio__img"
+                  src="./images/portfolio/bankingApp.jpg"
+                  alt="BankingApp"
+                />
+                <div class="p-box">
+                  <p class="p-box__text">
+                    14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                  </p>
+                </div>
+              </a>
+              <div class="p-box__container">
+                <h2 class="p-box__project">Banking App Interface Concept</h2>
+                <p class="p-box__type">App</p>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <a class="portfolio__link link" href="*/">
+                <img
+                  src="./images/portfolio/cashlessPayment.jpg"
+                  alt="cashless Payment"
+                />
+                <div class="p-box">
+                  <p class="p-box__text">
+                    14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                  </p>
+                </div>
+              </a>
+              <div class="p-box__container">
+                <h2 class="p-box__project">Cashless Payment</h2>
+                <p class="p-box__type">Marketing</p>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <a class="portfolio__link link" href="*/">
+                <img src="./images/portfolio/MeditationApp.jpg" alt="Meditaion App" />
+                <div class="p-box">
+                  <p class="p-box__text">
+                    14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                  </p>
+                </div>
+              </a>
+              <div class="p-box__container">
+                <h2 class="p-box__project">Meditaion App</h2>
+                <p class="p-box__type">App</p>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <a class="portfolio__link link" href="*/">
+                <img src="./images/portfolio/taxiService.jpg" alt="Taxi Service" />
+                <div class="p-box">
+                  <p class="p-box__text">
+                    14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                  </p>
+                </div>
+              </a>
+              <div class="p-box__container">
+                <h2 class="p-box__project">Taxi Service</h2>
+                <p class="p-box__type">Marketing</p>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <a class="portfolio__link link" href="*/"
+                ><img src="./images/portfolio/screenIllustrations.jpg" alt="Screen Illustrations" />
+                <div class="p-box">
+                  <p class="p-box__text">
+                    14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                  </p>
+                </div>
+              </a>
+              <div class="p-box__container">
+                <h2 class="p-box__project">Screen Illustrations</h2>
+                <p class="p-box__type">Design</p>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <a class="portfolio__link link" href="*/">
+                <img
+                  src="./images/portfolio/OnlineCourses.jpg"
+                  alt="Online Courses"
+                />
+                <div class="p-box">
+                  <p class="p-box__text">
+                    14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                  </p>
+                </div>
+              </a>
+              <div class="p-box__container">
+                <h2 class="p-box__project">Online Courses</h2>
+                <p class="p-box__type">Marketing</p>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <a class="portfolio__link link" href="*/">
+                <img
+                  src="./images/portfolio/InstagramStoriesConsept.jpg"
+                  alt="Instagram Stories Consept"
+                />
+                <div class="p-box">
+                  <p class="p-box__text">
+                    14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                  </p>
+                </div>
+              </a>
+              <div class="p-box__container">
+                <h2 class="p-box__project">Instagram Stories Consept</h2>
+                <p class="p-box__type">Design</p>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <a class="portfolio__link link" href="*/"
+                ><img src="./images/portfolio/OrganicFood.jpg" alt="Organic Food" />
+                <div class="p-box">
+                  <p class="p-box__text">
+                    14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                  </p>
+                </div>
+              </a>
+              <div class="p-box__container">
+                <h2 class="p-box__project">Organic Food</h2>
+                <p class="p-box__type">Web Site</p>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <a class="portfolio__link link" href="*/"
+                ><img src="./images/portfolio/FreshCoffe.jpg" alt="Fresh Coffe" />
+                <div class="p-box">
+                  <p class="p-box__text">
+                    14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                  </p>
+                </div>
+              </a>
+              <div class="p-box__container">
+                <h2 class="p-box__project">Fresh Coffe</h2>
+                <p class="p-box__type">Web Site</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="container footer">
+        <div class="footer__address">
+          <h2 class="visually-hidden">Контактная информация</h2>
+          <a href="index.html" class="nav__logo foot link">
+            <span class="nav__logo-first">Web</span><span class="nav__logo-third">Studio</span>
+          </a>
+          <address class="address">
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with digital marketing & growth solutions.
+            </p>
+            <!-- <ul class="list">
+              <li class="address__list hover-link">
+                <a
+                  class="address__map link"
+                  href="https://goo.gl/maps/BUU7MnYP6HP1QaoV9"
+                  target="_blank"
+                  rel="external"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address__list hover-link">
+                <a class="address__item link" href="mailto:info@example.com">info@example.com</a>
+              </li>
+
+              <li class="address__list hover-link">
+                <a class="address__item link" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul> -->
+          </address>
+        </div>
+        <div class="f-socialmedia">
+          <p class="f-socialmedia__tittle">Social media </p>
+
+          <ul class="socialmedia__list list">
+            <li class="socialmedia__item">
+              <a
+                class="socialmedia__link foot"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram"
+              >
+                <svg class="socialmedia__icon foot">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socialmedia__item">
+              <a
+                class="socialmedia__link foot"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="twitter"
+              >
+                <svg class="socialmedia__icon foot">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socialmedia__item">
+              <a
+                class="socialmedia__link foot"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="facebook"
+              >
+                <svg class="socialmedia__icon foot">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socialmedia__item">
+              <a
+                class="socialmedia__link foot"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="linkedin"
+              >
+                <svg class="socialmedia__icon foot">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="f-form">
+          <label class="f-form__label">
+            <span class="f-form__title">Subscribe</span>
+            <input type="text" class="f-form__input" placeholder="Email" />
+          </label>
+          <button class="f-form__btn">
+            <span class="f-form__btn-text">Subscribe</span>
+            <svg class="f-form__svg">
+              <use href="./images/icons.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
