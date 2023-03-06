@@ -25,13 +25,14 @@ address {
 } */
 .list {
   list-style: none;
-  /* padding-left: 0;
-  margin: 0; */
+  padding-left: 0;
+  margin: 0; 
 }
 .link {
   text-decoration: none;
   cursor: pointer;
 }
+
 /*======================================================================== */
 /* Header */
 
@@ -949,8 +950,16 @@ section.activity {
   .container{
     width: 480px;
     text-align: center;
-    padding: 0;
+  
     
+  }
+  .section{
+    padding-top: 96px;
+  }
+  .section.team{
+    padding-bottom: 128px;
+    padding-left: 82px;
+    padding-right: 82px;
   }
 body{
   display: block;
@@ -976,12 +985,18 @@ text-transform: capitalize;
   background-color: #4D5AE5;
 }
 .benefits.container{
-  padding:96px 16px;
+  padding:0 16px;
 }
 .benefits__items{
   text-align: center;
 }
 .benefits--hover:not(:last-child){
   margin-bottom: 72px;
+}
+.team__item{
+  padding-top: 72px;
+  width: 260.35px;
+height: 428px;
+
 }
 }
