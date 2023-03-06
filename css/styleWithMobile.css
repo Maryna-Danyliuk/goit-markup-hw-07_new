@@ -25,7 +25,7 @@ address {
 } */
 .list {
   list-style: none;
-  padding-left: 0;
+  /* padding-left: 0; */
   margin: 0; 
 }
 .link {
@@ -515,11 +515,11 @@ section.activity {
 .section.team {
   background-color: var(--cloud-white-color);
 }
-
+/* 
 .team__list {
   
   padding-bottom: 30px;
-}
+} */
 
 .team__title {
   font-weight: 700;
@@ -948,9 +948,10 @@ section.activity {
 
 @media screen and (max-width:480px) {
   .container{
-    width: 480px;
-    text-align: center;
-  
+    /* width: 480px;
+    text-align: center; */
+  margin-left: auto;
+  margin-right: auto;
     
   }
   .section{
@@ -958,8 +959,7 @@ section.activity {
   }
   .section.team{
     padding-bottom: 128px;
-    padding-left: 82px;
-    padding-right: 82px;
+  
   }
 body{
   display: block;
