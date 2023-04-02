@@ -753,22 +753,39 @@ border-radius: 50%;
 .main-footer {
   /* display: flex; */
   background-color: var(--navy-blue);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  
 }
 .container.footer {
+  padding-top: 96px;
   /* display: flex; */
-  align-items: baseline;
-  width: 1600px;
-  padding-left: 215px;
+  
+  
 }
 
 .footer__address {
   margin-right: 70px;
 }
-.logo.foot {
-  display: block;
-  margin-bottom: 20px;
+.nav__logo.foot {
+  display: flex;
+  justify-content: center;
+
+  
+}
+.footer__information{
+  text-align: center;
+  
+  padding: 16px 80px 72px 80px;
+  /* position: absolute;
+width: 268px;
+height: 72px; */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #E7E9FC;
+padding-bottom: 72px;
 }
 .address__item {
   font-family: 'Roboto';
@@ -787,10 +804,11 @@ border-radius: 50%;
 }
 .nav__logo-third {
   font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--background-color);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  color: var(--cloud-white-color);
+  text-transform: uppercase;
 }
 .address__item.link:hover,
 .address__item.link:focus {
@@ -799,20 +817,22 @@ border-radius: 50%;
 .address {
   margin-right: 70px;
 }
+.f-socialmedia{
+  padding-bottom: 72px;
+}
 .f-socialmedia__tittle {
   display: block;
 }
 .f-socialmedia__tittle {
+  display: flex;
+  justify-content: center;
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--background-color);
-  margin-bottom: 20px;
-  justify-content: center;
-  margin: auto;
 }
 .social-media-link.foot {
   background: rgba(255, 255, 255, 0.1);
@@ -959,8 +979,9 @@ border-radius: 50%;
 
 @media screen and (max-width:480px) {
   .container{
-    /* width: 480px;
+    /* 
     text-align: center; */
+    width: 480px;
   margin-left: auto;
   margin-right: auto;
     
@@ -1015,6 +1036,7 @@ margin-right: auto;
   padding-left: 16px;
   
 }
+
 }
 ul{
   padding-left: initial;
