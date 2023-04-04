@@ -5,7 +5,7 @@
     --cloud-white-color:#F4F4FD;
     --grey-color:#8E8F99;
     --navy-blue:#2E2F42;
-
+--m:#fff 10%;
     /* --padding-vertical-container: 94px;
     --size-padding-portfolio: 300px;
     --item-portfolio-count: 5; */
@@ -834,14 +834,14 @@ padding-bottom: 72px;
   letter-spacing: 0.02em;
   color: var(--background-color);
 }
-.social-media-link.foot {
-  background: rgba(255, 255, 255, 0.1);
+.socialmedia__link.foot {
+  background: var(--grey-color) ;
   border-radius: 50%;
   color: var(--background-color);
   transition: background-color var(--animation), border-radius var(--animation);
 }
-.social-media-link.foot:hover,
-.social-media-link.foot:focus {
+.socialmedia-link.foot:hover,
+.socialmedia-link.foot:focus {
   background-color: var(--logo-first-part-color-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -849,53 +849,70 @@ padding-bottom: 72px;
   margin-right: 0;
 }
 .f-form {
-  margin-left: 93px;
-  display: flex;
-  align-items: flex-end;
+  
+padding-bottom: 96px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .f-form__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--background-color);
-  margin-bottom: 20px;
-}
-.f-form__label {
   display: flex;
-  flex-direction: column;
-  margin-right: 12px;
+  justify-content: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--background-color);
+  padding-bottom: 16px;
+}
+.f-form__label{
+  padding-bottom: 16px;
 }
 .f-form__input {
-  width: 358px;
-  height: 50px;
+  width: 398px;
+  height: 40px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px var(--logo-second-part-color-black));
   border-radius: 4px;
   background: transparent;
-  padding-top: 8px;
-  padding-left: 16px;
   color: var(--background-color);
 }
+.f-form__input::placeholder{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 2;
+letter-spacing: 0.04em;
+padding-left: 16px;
+}
+.footer__btn{
+display: flex;
+justify-content: center;
+}
 .f-form__btn {
-  width: 200px;
-  height: 50px;
-  background-color: var(--logo-first-part-color-blue);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
+  width: 165px;
+  height: 40px;
+  background-color: var(--second-color);
+ 
   border-radius: 4px;
-  border-color: var(--logo-first-part-color-blue);
+  border-color:var(--second-color) ;
   cursor: pointer;
+  margin-top: 16px;
 }
 .f-form__btn-text {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
   padding: 0;
-  letter-spacing: 0.06em;
   color: var(--background-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-right: 12px;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
 }
 .f-form__svg {
   width: 24px;
